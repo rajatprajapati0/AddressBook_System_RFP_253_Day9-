@@ -15,17 +15,6 @@ namespace Address_Book
         public string Phone;
         public string Email;
 
-        //public override string ToString()
-        //{
-        //return @$"
-        //  Name: {firstName} {lastName}
-        //  Address: {this.Address} 
-        //  City: {this.City}
-        //  State: {this.State}
-        //  Zipcode: {this.Zipcode}
-        //  PhoneNumber:{this.Phone}
-        //  Email: {this.Email}
-        //           ";
-        //}
+
     }
 }
