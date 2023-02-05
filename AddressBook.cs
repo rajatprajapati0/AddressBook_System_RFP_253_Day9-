@@ -55,7 +55,7 @@ namespace Address_Book
                       Zipcode: {contact.Zipcode}
                       PhoneNumber:{contact.Phone}
                       Email: {contact.Email}
-                  ");
+                   ");
 
                 }
             }
@@ -77,26 +77,29 @@ namespace Address_Book
                     contact= item;
                }
                
-               if(contact== null)
+               if(contact == null)
                {
                     Console.WriteLine("this contact is not available ");
 
                 
                }
                 contact = AddContact();
+                
                 for (int i=0;i<contacts.Count;i++) 
                 {
                   if (contacts[i].firstName == n) 
                   {
-                  
-                        contact= contacts[i];
                       
+                      contacts.RemoveAt(i);
+                      contact= contacts[i];
+                      Console.WriteLine("Contact edited");
                   }
                  return;
                 }
 
              }
             
+
         }
 
     }
