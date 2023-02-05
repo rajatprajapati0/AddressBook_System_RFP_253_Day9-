@@ -61,5 +61,43 @@ namespace Address_Book
             }
         }
 
+
+        public void Edit()
+        {
+            
+           Console.WriteLine("enter name in which u want to do edit");
+           string n = Console.ReadLine();
+           Contact contact = null;
+
+             foreach (var item in contacts)
+             {
+
+               if (item.firstName == n)
+               {
+                    contact= item;
+               }
+               
+               if(contact== null)
+               {
+                    Console.WriteLine("this contact is not available ");
+
+                
+               }
+                contact = AddContact();
+                for (int i=0;i<contacts.Count;i++) 
+                {
+                  if (contacts[i].firstName == n) 
+                  {
+                  
+                        contact= contacts[i];
+                      
+                  }
+                 return;
+                }
+
+             }
+            
+        }
+
     }
 }
